@@ -1,0 +1,104 @@
+/* App.css */
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #2980b9;
+  cursor: pointer;
+  margin: 10px 0;
+  text-align: center;
+  transition: color 0.3s ease;
+  border: 2px solid black;
+}
+
+h4:hover {
+  color: #3498db;
+  text-decoration: underline;
+  border: 2px solid black;
+}
+
+h4:active {
+  color: #1abc9c;
+  border: 2px solid black;
+}
+
+/* Page Switching Animation */
+.switch-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ /* Styling for the active page */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    border: 2px solid black ;
+  }
+
+  .switch-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
